@@ -12,18 +12,23 @@ public class Ejercicio21 {
         System.out.println("introduce el primer numero");
 
         Scanner sc = new Scanner(System.in);
-        int n1 = (int) sc.nextDouble();
+        double n1 = sc.nextDouble();
         System.out.println("introduce el segundo numero");
-        int n2 = (int) sc.nextDouble();
-        System.out.println("los numeros primos comprendidos entre n1 y n2 son los siguientes");
-for(int i =0;n1<=n2;i++){
- for (int i2 = 2; i < n; i++) {
-            if (n % i == 0) {
-                primo = false;
-                break;
+        double n2 = sc.nextDouble();
+        
+
+        int n = sc.nextInt();
+        boolean primo = true;
+        for (n1 = sc.nextDouble(); n1 <= n2; n1++) {
+            for (int i = 2; i < n; i++) {
+                if (n % i == 1) {
+                    primo = true;
+                    System.out.println(n);
+                }
             }
-        }    
-}
+        }
+        System.out.println("los numeros primos comprendidos entre n1 y n2 son los siguientes");
+
     }//fin del main
 
 }// fin de la clase
